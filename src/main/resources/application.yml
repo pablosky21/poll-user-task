@@ -1,6 +1,6 @@
 spring:
   application:
-    name: croby
+    name: music-poll
   cache:
     type: none
   datasource:

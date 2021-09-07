@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: music-poll
+  cache:
+    type: none
+  profiles:
+    active: test
+server:
+  port: 8080
