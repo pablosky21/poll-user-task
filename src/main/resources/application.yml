@@ -5,7 +5,7 @@ spring:
     type: none
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/productos
+    url: jdbc:postgresql://localhost:5432/encuesta
     username: postgres
     password: 123asd
   jpa:

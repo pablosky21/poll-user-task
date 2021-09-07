@@ -6,6 +6,9 @@ Script para agregar tablas a base de datos:
 PostgreSQL
 12.5
 
+create user pepito with encrypted password 'pepitoPass';
+create database encuesta;
+grant all privileges on database encuesta to pepito;
 
 CREATE SEQUENCE seq_tipo_musica;
 CREATE SEQUENCE seq_usuario;
