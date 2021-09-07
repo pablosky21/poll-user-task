@@ -1,7 +1,7 @@
 # poll-user-task
 rest api encuesta usuario
 
-Scrpyt para agregar tablas a base de datos:
+Script para agregar tablas a base de datos:
 
 PostgreSQL
 12.5
