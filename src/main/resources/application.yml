@@ -1,27 +1,22 @@
 spring:
   application:
     name: music-poll
-  cache:
-    type: none
+  h2:
+    console:
+      enabled: true
+      path: /h2
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/encuesta
-    username: postgres
-    password: 123asd
+    url: jdbc:h2:file:~/test
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+        
   jpa:
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
-    generate-ddl: false
-    show-sql: true
     hibernate:
-      ddl-auto: none
-    database: postgresql
-    # Logger configuration
-logging:
-  pattern:
-    console: "%d %-5level %logger : %msg%n"
-  level:
-    org.springframework: info
-    org.hibernate: debug
-# Server configuration
-server:
-  port: 8080 #set your port        
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+    defer-datasource-initialization: true    
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true 
